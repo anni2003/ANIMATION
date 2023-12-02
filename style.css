@@ -1,0 +1,47 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#hero{
+    background-color: brown;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+.cursor{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border: 1px black solid;
+  border-radius: 50%;
+  transform:translate (-50%, -50%);
+pointer-events: none;
+transform-origin: 100%,100%;
+transition:transform 0.3s ease;
+}
+.link-grow {
+transform: scale(2,2);
+}
+
+.hidden{
+  display: none;
+}
+.panel{
+  height: 50vh;
+background-repeat: no-repeat;
+
+padding: 10px;
+border-radius: 10%;
+margin: 10px;
+
+}
+.panel.active{
+  flex:10;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
